@@ -12,5 +12,7 @@ jobs:
     steps:
       # Drafts your next Release notes as Pull Requests are merged into "master"
       - uses: pdcmoreira/release-drafter@manually-set-tag
+        with:
+          tag: 'v2.1.1'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
